@@ -32,7 +32,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Aro-zt-GYT" kind="show" id="ibR-xU-EpF"/>
+                                    <segue destination="Aro-zt-GYT" kind="show" identifier="toRepView" id="ibR-xU-EpF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
