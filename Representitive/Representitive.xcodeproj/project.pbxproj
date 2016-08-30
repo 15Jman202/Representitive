@@ -10,10 +10,10 @@
 		D07E1B831D74EE9F00C9D752 /* StatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B821D74EE9F00C9D752 /* StatesTableViewController.swift */; };
 		D07E1B851D74EEB000C9D752 /* RepresentitiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B841D74EEB000C9D752 /* RepresentitiveTableViewController.swift */; };
 		D07E1B871D74EEC100C9D752 /* RepCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B861D74EEC100C9D752 /* RepCellTableViewCell.swift */; };
-		D07E1B891D74EF1200C9D752 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B881D74EF1200C9D752 /* State.swift */; };
+		D07E1B891D74EF1200C9D752 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B881D74EF1200C9D752 /* StateController.swift */; };
 		D07E1B8B1D74EF2300C9D752 /* Representitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B8A1D74EF2300C9D752 /* Representitive.swift */; };
 		D07E1B8D1D74EF3000C9D752 /* RepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B8C1D74EF3000C9D752 /* RepController.swift */; };
-		D07E1B8F1D74EF3B00C9D752 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B8E1D74EF3B00C9D752 /* StateController.swift */; };
+		D07E1B941D74F46C00C9D752 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E1B931D74F46C00C9D752 /* NetworkController.swift */; };
 		D0ECC0C41D74E86A00A5B381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECC0C31D74E86A00A5B381 /* AppDelegate.swift */; };
 		D0ECC0C91D74E86A00A5B381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0ECC0C71D74E86A00A5B381 /* Main.storyboard */; };
 		D0ECC0CC1D74E86A00A5B381 /* Representitive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0ECC0CA1D74E86A00A5B381 /* Representitive.xcdatamodeld */; };
@@ -25,10 +25,10 @@
 		D07E1B821D74EE9F00C9D752 /* StatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesTableViewController.swift; sourceTree = "<group>"; };
 		D07E1B841D74EEB000C9D752 /* RepresentitiveTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentitiveTableViewController.swift; sourceTree = "<group>"; };
 		D07E1B861D74EEC100C9D752 /* RepCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepCellTableViewCell.swift; sourceTree = "<group>"; };
-		D07E1B881D74EF1200C9D752 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D07E1B881D74EF1200C9D752 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		D07E1B8A1D74EF2300C9D752 /* Representitive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Representitive.swift; sourceTree = "<group>"; };
 		D07E1B8C1D74EF3000C9D752 /* RepController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepController.swift; sourceTree = "<group>"; };
-		D07E1B8E1D74EF3B00C9D752 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		D07E1B931D74F46C00C9D752 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		D0ECC0C01D74E86A00A5B381 /* Representitive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representitive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ECC0C31D74E86A00A5B381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0ECC0C81D74E86A00A5B381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		D07E1B901D74EF4400C9D752 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D07E1B881D74EF1200C9D752 /* StateController.swift */,
 				D07E1B8C1D74EF3000C9D752 /* RepController.swift */,
-				D07E1B8E1D74EF3B00C9D752 /* StateController.swift */,
 			);
 			name = "Model Controllers";
 			sourceTree = "<group>";
@@ -61,7 +61,6 @@
 		D07E1B911D74EF5400C9D752 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D07E1B881D74EF1200C9D752 /* State.swift */,
 				D07E1B8A1D74EF2300C9D752 /* Representitive.swift */,
 			);
 			name = Models;
@@ -100,6 +99,7 @@
 				D07E1B901D74EF4400C9D752 /* Model Controllers */,
 				D07E1B921D74EF7300C9D752 /* View Controllers */,
 				D0ECC0C31D74E86A00A5B381 /* AppDelegate.swift */,
+				D07E1B931D74F46C00C9D752 /* NetworkController.swift */,
 				D0ECC0C71D74E86A00A5B381 /* Main.storyboard */,
 				D0ECC0CD1D74E86A00A5B381 /* Assets.xcassets */,
 				D0ECC0D21D74E86A00A5B381 /* Info.plist */,
@@ -185,11 +185,11 @@
 				D07E1B8D1D74EF3000C9D752 /* RepController.swift in Sources */,
 				D0ECC0CC1D74E86A00A5B381 /* Representitive.xcdatamodeld in Sources */,
 				D07E1B831D74EE9F00C9D752 /* StatesTableViewController.swift in Sources */,
-				D07E1B8F1D74EF3B00C9D752 /* StateController.swift in Sources */,
 				D07E1B8B1D74EF2300C9D752 /* Representitive.swift in Sources */,
 				D07E1B851D74EEB000C9D752 /* RepresentitiveTableViewController.swift in Sources */,
 				D0ECC0C41D74E86A00A5B381 /* AppDelegate.swift in Sources */,
-				D07E1B891D74EF1200C9D752 /* State.swift in Sources */,
+				D07E1B891D74EF1200C9D752 /* StateController.swift in Sources */,
+				D07E1B941D74F46C00C9D752 /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

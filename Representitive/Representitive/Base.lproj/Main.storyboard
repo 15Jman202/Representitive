@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--States Table View Controller-->
         <scene sceneID="OG7-YU-X7y">
             <objects>
-                <tableViewController id="fGg-4S-GRp" sceneMemberID="viewController">
+                <tableViewController id="fGg-4S-GRp" customClass="StatesTableViewController" customModule="Representitive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ggq-0P-s20">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,16 +47,16 @@
             </objects>
             <point key="canvasLocation" x="1030" y="463"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Representitive Table View Controller-->
         <scene sceneID="Crs-k5-nLz">
             <objects>
-                <tableViewController id="Aro-zt-GYT" sceneMemberID="viewController">
+                <tableViewController id="Aro-zt-GYT" customClass="RepresentitiveTableViewController" customModule="Representitive" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="SU3-mw-WNl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepCell" rowHeight="150" id="8uc-Jt-I85">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepCell" rowHeight="150" id="8uc-Jt-I85" customClass="RepCellTableViewCell" customModule="Representitive" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8uc-Jt-I85" id="Krf-0j-iec">
@@ -67,13 +67,13 @@
                                             <rect key="frame" x="8" y="0.0" width="584" height="150"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lr-Kk-L7E">
-                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="69"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="68"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-2S-xOy">
-                                                    <rect key="frame" x="0.0" y="69" width="584" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-2S-xOy">
+                                                    <rect key="frame" x="0.0" y="68" width="584" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="4OP-Se-5SU"/>
                                                     </constraints>
@@ -81,19 +81,22 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T41-G8-liZ">
-                                                    <rect key="frame" x="0.0" y="90" width="584" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="District Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T41-G8-liZ">
+                                                    <rect key="frame" x="0.0" y="89" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="UMr-zY-okK"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-hH-95u">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-hH-95u">
                                                     <rect key="frame" x="0.0" y="110" width="584" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goU-wM-7FD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goU-wM-7FD">
                                                     <rect key="frame" x="0.0" y="130" width="584" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -101,9 +104,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="goU-wM-7FD" firstAttribute="top" secondItem="T41-G8-liZ" secondAttribute="bottom" constant="20" id="N87-Ii-ijZ"/>
-                                                <constraint firstItem="xsg-hH-95u" firstAttribute="top" secondItem="5Za-2S-xOy" secondAttribute="bottom" constant="20" id="bYj-gv-mzO"/>
-                                                <constraint firstAttribute="bottom" secondItem="xsg-hH-95u" secondAttribute="bottom" constant="20" symbolic="YES" id="mQw-dL-3Bp"/>
+                                                <constraint firstItem="goU-wM-7FD" firstAttribute="top" secondItem="T41-G8-liZ" secondAttribute="bottom" constant="20" id="3bf-iK-KMZ"/>
+                                                <constraint firstItem="xsg-hH-95u" firstAttribute="top" secondItem="T41-G8-liZ" secondAttribute="bottom" id="D5b-47-t40"/>
+                                                <constraint firstAttribute="bottom" secondItem="xsg-hH-95u" secondAttribute="bottom" constant="20" symbolic="YES" id="iaY-0s-m1J"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -114,6 +117,13 @@
                                         <constraint firstItem="fAe-tW-EBo" firstAttribute="trailing" secondItem="Krf-0j-iec" secondAttribute="trailingMargin" id="hVB-Jh-CH0"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="DistrictLable" destination="T41-G8-liZ" id="GJW-Rt-y8W"/>
+                                    <outlet property="NameLable" destination="1lr-Kk-L7E" id="lOj-Hk-4SI"/>
+                                    <outlet property="PartyLable" destination="5Za-2S-xOy" id="4tL-8V-lVv"/>
+                                    <outlet property="PhoneNumberLable" destination="goU-wM-7FD" id="avD-kK-K6b"/>
+                                    <outlet property="WebsiteLable" destination="xsg-hH-95u" id="jed-F4-eh9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
