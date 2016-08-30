@@ -12,11 +12,11 @@ class RepController {
 
     static let baseURL = NSURL(string: "http://whoismyrepresentative.com/getall_reps_bystate.php?")
     
-    static func GetReps(representives: Representitive, completion: ((rep: [Representitive]) -> Void)) {
+    static func GetReps(state: String, completion: ((rep: [Representitive]) -> Void)) {
         
         guard let url = self.baseURL else { fatalError("URL optional is nil") }
         
-        let urlParameters = ["Reps": "\(representives)"]
+        let urlParameters = ["state": "\(state)", "output": "json"]
      
         NetworkController.performRequestForURL(url, httpMethod: .Get, urlParameters: urlParameters, body: nil) { (data, error) in
             if let data = data, responseDataString = NSString(data: data, encoding: NSUTF8StringEncoding) {
@@ -28,7 +28,6 @@ class RepController {
                         return
                 }
 
-                
                 let reps = repDictionaries.flatMap({Representitive(dictionary: $0)})
                 
                 completion(rep: reps)

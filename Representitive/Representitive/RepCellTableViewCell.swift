@@ -16,9 +16,11 @@ class RepCellTableViewCell: UITableViewCell {
     @IBOutlet weak var WebsiteLable: UILabel!
     @IBOutlet weak var PhoneNumberLable: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func updateWithReps(rep: Representitive) {
+        NameLable.text = rep.name
+        PartyLable.text = rep.party
+        DistrictLable.text = "District \(rep.district)"
+        WebsiteLable.text = rep.link
+        PhoneNumberLable.text = rep.phone
     }
-    
 }
