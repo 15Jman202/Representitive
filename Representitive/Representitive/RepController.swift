@@ -10,7 +10,7 @@ import Foundation
 
 class RepController {
 
-    static let baseURL = NSURL(string: "http://whoismyrepresentative.com/getall_reps_bystate.php?")
+    static let baseURL = NSURL(string: "http://whoismyrepresentative.com/getall_reps_bystate.php")
     
     static func GetReps(state: String, completion: ((rep: [Representitive]) -> Void)) {
         
@@ -22,6 +22,7 @@ class RepController {
             if let data = data, responseDataString = NSString(data: data, encoding: NSUTF8StringEncoding) {
                 
                 guard let responseDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [String: AnyObject], repDictionaries = responseDictionary["results"] as? [[String: AnyObject]]
+                    
                     else {
                         print("Unable to serialize JSON. \nResponse: \(responseDataString)")
                         completion(rep: [])

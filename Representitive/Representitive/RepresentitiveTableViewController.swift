@@ -19,7 +19,9 @@ class RepresentitiveTableViewController: UITableViewController {
         if let state = state {
             
             RepController.GetReps(state, completion: { (rep) in
+                
                 self.representitives = rep
+                
                 dispatch_async(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
                 })
@@ -30,12 +32,11 @@ class RepresentitiveTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return representitives.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as? RepCellTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("RepCell", forIndexPath: indexPath) as? RepCellTableViewCell
 
         let reps = representitives[indexPath.row]
         cell?.updateWithReps(reps)
